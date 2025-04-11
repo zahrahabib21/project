@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Recipe Book </title>
+        
+        <link rel="stylesheet" href="../css/style.css">
+
+
+        <link rel="icon" href="../img/favicon_io (2)/android-chrome-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io (2)/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io (2)/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io (2)/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon_io (2)/site.webmanifest">
+    
+
+        <style>
+
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        
+
+        }
+
+     body {
+        background-color:azure;
+
+     }
+
+     header {
+        background-color: rgb(49, 242, 242); 
+        padding: 20px; 
+       }
+
+
+      .navdar {
+        background-color: rgb(240, 255, 255);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 5px 10px 0px aqua;
+        opacity: 0.70 ;
+        position: absolute;
+
+     }
+
+     .navbar-container {
+       display: flex;
+       align-items: center;
+       justify-content:space-between;
+     }
+
+ 
+     .navbar-container  h1{
+        font-size: 30px;
+        margin-left: 500px;
+
+     }
+
+
+     .navbar-container .menu-list li {
+        display: inline;
+        margin-right: 2rem;
+
+     }
+
+     .navbar-container .menu-list li a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        font-weight: 600;
+
+     }
+
+     
+.navbar-container .menu-list li a:hover {
+    color:white;
+}
+
+.navbar-container .menu-list .sub-1 {
+    display: none;
+
+}
+
+.navbar-container .menu-list li:hover .sub-1{
+    display: block;
+    background-color:aqua;
+    position: absolute;
+    right: 2px;
+    border-radius: 5px;
+
+    
+}
+
+.navbar-container .menu-list li:hover .sub-1 ul li {
+    display: block;
+    width: 100%;
+
+}
+
+.navbar-container .menu-list li:hover .sub-1 ul li a{
+    color: black;
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.5rm; 
+    display: block;
+    padding: 5px 10px;
+    
+
+}
+.navbar-container .menu-list li:hover .sub-1 ul li a:hover {
+    background-color:white;
+    color:black;
+    width: 100%;
+    display: block;
+}
+
+.recipe-gallery .recipe-gallery-container h2 {
+    font-size: 60px;
+    margin-top: -10px;
+
+}
+
+ section img {
+   margin-top: 10px;
+   width: 420px;
+   height: 350px;
+}
+
+ section i {
+    font-size: 20px;
+
+}
+     
+  
+
+        </style>
+    
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container container">
+                    <div><h1>Recipe Book</h1></div>
+                    <ul class="menu-list">
+                    <li><a href="home.html" target="_self">Home</a></li>
+                    <li><a href="add-recipet.html" target="_self">Add Recipe</a></li>
+                    <li><a href="recipe-list.html" target="_self">Recipe List</a>
+                     <div class="sub-1">
+                        <ul>
+                            <li><a href="desserts.html">Desserts</a></li>
+                            <li><a href="drinks.html">Drinks</a></li>
+                            <li><a href="Quick-meals.html">Quick meals</a></li>
+                        </ul>
+                     </div>  
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <br>
+
+
+        <section class="recipe-gallery">
+            <div class=" recipe-gallery-container container">
+                <h2> Mango Juice </h2>
+            </div>
+            <div>
+                <img src="../img/mango-frooti.jpg " >
+            </div>
+            <div><i>Mango juice is a delicious, tropical drink made by blending ripe mangoes with water or milk. It's naturally sweet, refreshing, and packed with vitamins, especially vitamin C, making it a perfect thirst quencher on hot days. </i></div>
+            <br>
+           <b><a href="recipe-details.html"> Details Recipe of dish </a></b> 
+        </section>
+        <br>
+
+        <section class="recipe-gallery">
+            <div class=" recipe-gallery-container container">
+                <h2> Banana Juice </h2>
+            </div>
+            <div>
+                <img src="../img/istockphoto-1451859766-612x612.jpg " >
+            </div>
+            <div><i>Banana juice is a sweet, creamy beverage made by blending ripe bananas with milk or water. It's a nutritious drink, packed with vitamins, potassium, and natural sugars, making it a great energy boost and refreshing treat.</i></div>
+            <br>
+           <b><a href="recipe-details.html"> Details Recipe of dish </a></b> 
+        </section>
+        <br>
+
+        <section class="recipe-gallery">
+            <div class=" recipe-gallery-container container">
+                <h2>  Cold Coffee </h2>
+            </div>
+            <div>
+                <img src="../img/images (2).jpeg" >
+            </div>
+            <div><i> Iced coffee is a refreshing cold beverage made by brewing coffee and chilling it over ice. It's often sweetened and can be enhanced with milk, cream, or flavored syrups. Popular during warm weather, iced coffee offers a cool and energizing way to enjoy coffee.</i></div>
+            <br>
+           <b><a href="recipe-details.html"> Details Recipe of dish </a></b> 
+        </section>
+
+    </body>
+</html>

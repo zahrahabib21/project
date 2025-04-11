@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Recipe Book </title>
+        
+        <link rel="stylesheet" href="../css/style.css">
+
+
+        <link rel="icon" href="../img/favicon_io (2)/android-chrome-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io (2)/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io (2)/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io (2)/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon_io (2)/site.webmanifest">
+    
+
+      <style>
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
+body {
+background-color: azure;
+
+}
+
+header {
+background-color: rgb(49, 242, 242); 
+padding: 20px; 
+}
+
+
+.navdar {
+background-color: azure;
+width: 100%;
+display: flex;
+justify-content: center;
+box-shadow: 0px 5px 10px 0px aqua;
+opacity: 0.70 ;
+position: absolute;
+
+}
+
+
+.navbar-container {
+display: flex;
+align-items: center;
+justify-content:space-between;
+}
+
+
+.navbar-container  h1{
+font-size: 30px;
+margin-left: 500px;
+
+}
+
+
+.navbar-container .menu-list li {
+display: inline;
+margin-right: 2rem;
+
+}
+
+.navbar-container .menu-list li a {
+text-decoration: none;
+color: black;
+font-size: 0.9rem;
+text-transform: capitalize;
+font-weight: 600;
+
+}
+
+.navbar-container .menu-list li a:hover {
+color:white;
+}
+
+.navbar-container .menu-list .sub-1 {
+    display: none;
+
+}
+
+.navbar-container .menu-list li:hover .sub-1{
+    display: block;
+    background-color:aqua;
+    position: absolute;
+    right: 2px;
+    border-radius: 5px;
+
+    
+}
+
+.navbar-container .menu-list li:hover .sub-1 ul li {
+    display: block;
+    width: 100%;
+
+}
+
+.navbar-container .menu-list li:hover .sub-1 ul li a{
+    color: black;
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.5rm; 
+    display: block;
+    padding: 5px 10px;
+    
+
+}
+.navbar-container .menu-list li:hover .sub-1 ul li a:hover {
+    background-color:white;
+    color:black;
+    width: 100%;
+    display: block;
+}
+
+ .add-recipet .add-recipet-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
+ }
+
+ .add-recipet .add-recipet-container img {
+    margin-top: 46px;
+    width: 800px;
+    height: 650px;
+ }
+
+ form {
+    background-color:rgb(188, 188, 188);
+ }
+
+ form input {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ form button {
+    background-color: aqua;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    width: 100%;
+
+    
+
+ }
+
+ form label {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+ }
+
+ form textarea {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+ }
+
+ form select {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+ }
+
+
+
+ </style>
+    </head>
+
+    
+     <body>
+
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container container">
+                    <div><h1>Recipe Book</h1></div>
+                    <ul class="menu-list">
+                    <li><a href="home.html" target="_self">Home</a></li>
+                    <li><a href="add-recipet.html" target="_self">Add Recipe</a></li>
+                    <li><a href="recipe-list.html" target="_self">Recipe List</a>
+                     <div class="sub-1">
+                        <ul>
+                            <li><a href="desserts.html">Desserts</a></li>
+                            <li><a href="vegan.html">Vegan</a></li>
+                            <li><a href="Quick-meals.html">Quick meals</a></li>
+                        </ul>
+                     </div>  
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+       
+        <section class="add-recipet">
+            <div class="add-recipet-container container">
+                <div><h2>Add Your Recipe </h2>
+                    <br>
+            <form action="add-recipet.php" method="post">
+                   
+                    <label for="fname">First Name :</label>
+                    <input type="text" placeholder="Name" required> <br><br>
+                    
+                    <label for="lname">Last Name :</label>
+                    <input type="text" placeholder="Last Name" required> <br><br>
+
+                    <label for="gander">Gander</label><br>
+                    <input type="radio" name="gender">Male 
+                    <input type="radio" name="gender">Female 
+                    <input type="radio" name="gender"> Not wnat to say
+                    
+                    <br><br>
+
+                    <label for="rcat">Select your dish option</label><br>
+                    <select Recipe Category  required>
+                        <option value="desserts"> Desserts</option>
+                        <option value="apptizers"> Appetizers</option>
+                        <option value="drink"> Drinks</option> 
+
+                    </select> <br><br>
+
+                    <label for="fname">Recipe Name :</label>
+                    <input type="text" placeholder=" Recipe Name" required> <br><br>
+                    
+                    <label for="ing">Ingredients</label><br>
+                    <textarea name="name"  rows="6" cols="50" required></textarea> <br><br>
+                    
+                    <label for="cooking">Cooking Instructions</label><br>
+                    <textarea name="name" rows="6" cols="50" required></textarea> <br><br>
+                    
+                    <label for="file">select image of your dish</label><br>
+                    <input type="file" placeholder="dish image" required> <br><br>
+                    
+                   <button value="Submit" >  Submit </button> <br>
+                </form>
+                </div>
+            
+            <div>
+                <img src="../img/WhatsApp Image 2025-04-11 at 03.05.35_c138bdf8.jpg" alt="">
+            </div>
+            </div>
+        </section>
+
+    </body>
+    </head>
+</html>
